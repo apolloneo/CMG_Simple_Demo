@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:theme="@style/Theme.TransparentCompat"
+    android:background="@android:color/transparent"
+    android:keepScreenOn="true">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="generic_double_horizontal_panel"
+        android:src="@drawable/double_horiz_generic_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView_graphics_w1"
+        android:layout_width="365dp"
+        android:layout_height="176dp"
+        android:fontFamily="@font/dseg7"
+        android:text="000"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="135dp"
+        android:textStyle="italic"
+        android:textAlignment="center"
+        android:maxLines="1"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.765" />
+
+    <TextView
+        android:id="@+id/textView_graphics_w2"
+        android:layout_width="357dp"
+        android:layout_height="176dp"
+        android:fontFamily="@font/dseg7"
+        android:text="000"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="135dp"
+        android:textStyle="normal"
+        android:textAlignment="center"
+        android:maxLines="1"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.765" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
